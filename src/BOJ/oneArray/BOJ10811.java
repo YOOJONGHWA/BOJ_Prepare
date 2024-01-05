@@ -1,4 +1,4 @@
-package BOJ;
+package BOJ.oneArray;
 
 import java.io.BufferedReader;
 import java.io.IOException;
