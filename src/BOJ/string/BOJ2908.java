@@ -18,6 +18,6 @@ public class BOJ2908 {
         int B = Integer.parseInt(new StringBuilder(st.nextToken()).reverse().toString());
 
         System.out.print(Math.max(A, B));
-    }
 
+    }
 }
