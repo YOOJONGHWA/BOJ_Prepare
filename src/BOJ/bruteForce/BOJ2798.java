@@ -33,5 +33,8 @@ public class BOJ2798 {
            }
        }
         System.out.println(findMax);
+
+
+
     }
 }
