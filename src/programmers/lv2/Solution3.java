@@ -8,7 +8,7 @@ class Solution3 {
     boolean solution(String s) {
         boolean answer = true;
 
-        if
+
 
         return answer;
     }
