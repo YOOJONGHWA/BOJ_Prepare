@@ -3,6 +3,8 @@ package BOJ.setAndMap;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
@@ -31,6 +33,7 @@ public class BOJ20920 {
                     wordLength = word.length();
                 }
                 else {
+
                 }
             }
 
