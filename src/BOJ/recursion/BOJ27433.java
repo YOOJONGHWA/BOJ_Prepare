@@ -7,19 +7,17 @@ public class BOJ27433 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        sc.close();
-
-        int result = makeN(n);
+        Long n = sc.nextLong();
+        Long result = findN(n);
         System.out.println(result);
 
     }
+    public static Long findN(long n) {
 
-    private static int makeN(int n) {
+        if(n <= 1) {
+            return 1L;
+        }
 
-        if (n <= 1) return 1;
-        return n * makeN(n -1);
-
+        return n * findN(n-1);
     }
-
 }
