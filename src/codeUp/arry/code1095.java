@@ -1,11 +1,11 @@
-package codeUp;
+package codeUp.arry;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class code1094 {
+public class code1095 {
 
     public static void main(String[] args) throws IOException {
 
@@ -16,11 +16,13 @@ public class code1094 {
         for (int i = 0; i < call; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
-
-        for (int i = arr.length -1; i >= 0; i--) {
-            System.out.print(arr[i] + " ");
+        int maxNum = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (maxNum > arr[i]) {
+                maxNum = arr[i];
+            }
         }
-
+        System.out.println(maxNum);
     }
 
 }

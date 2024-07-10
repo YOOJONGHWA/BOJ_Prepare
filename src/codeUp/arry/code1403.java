@@ -1,4 +1,4 @@
-package codeUp;
+package codeUp.arry;
 
 import java.io.BufferedReader;
 import java.io.IOException;

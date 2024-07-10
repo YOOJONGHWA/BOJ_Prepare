@@ -1,4 +1,4 @@
-package codeUp;
+package codeUp.NestedLoop;
 
 import java.util.Scanner;
 

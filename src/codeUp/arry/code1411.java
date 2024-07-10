@@ -1,4 +1,4 @@
-package codeUp;
+package codeUp.arry;
 
 import java.io.IOException;
 import java.util.Scanner;

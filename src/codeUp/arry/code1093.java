@@ -1,4 +1,4 @@
-package codeUp;
+package codeUp.loop;
 
 import java.io.BufferedReader;
 import java.io.IOException;
