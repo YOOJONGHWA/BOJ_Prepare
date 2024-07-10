@@ -8,8 +8,8 @@ public class code1414 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();
-        String upperCaseStr = str.toUpperCase();
+        String str2 = sc.nextLine();
+        String upperCaseStr = str2.toUpperCase();
         int countC = 0;
         int countCc = 0;
         for (int i = 0; i < upperCaseStr.length(); i++) {
