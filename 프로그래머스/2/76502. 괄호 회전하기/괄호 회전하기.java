@@ -1,21 +1,22 @@
 import java.util.*;
 class Solution {
     public int solution(String s) {
-
-        HashMap<Character,Character> map = new HashMap<>();
-        map.put(')','(');
-        map.put(']','[');
-        map.put('}','{');
         
-        int length = s.length();
+        HashMap<Character, Character> map = new HashMap<>();
+        map.put(')', '(');
+        map.put(']', '[');
+        map.put('}', '{');
+        
+        int n = s.length();
         s += s;
         int answer = 0;
         
-        A:for(int i = 0; i < length; i++) {
+        A:for(int i = 0; i < n; i++) {
             
             ArrayDeque<Character> stack = new ArrayDeque<>();
-            for(int j = i; j < i + length; j++) {
+            for(int j = i; j < i + n; j++) {
                 char c = s.charAt(j);
+                
                 if(!map.containsKey(c)) {
                     stack.push(c);
                 }
@@ -27,7 +28,9 @@ class Solution {
             if(stack.isEmpty()) {
                 answer++;
             }
+            
         }
+        
         return answer;
     }
 }
