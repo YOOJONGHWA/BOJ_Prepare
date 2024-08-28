@@ -43,7 +43,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution11 solution = new Solution11();
         System.out.println(solution.solution("ULURRDLLU"));
         System.out.println(solution.solution("LULLLLLLU"));
     }
