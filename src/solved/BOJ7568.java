@@ -24,11 +24,12 @@ public class BOJ7568 {
         int[] score = new int[n];
         for (int i = 0; i < n; i++) {
 
-            score[i] = 0;
+            score[i] = 1;
+
             for (int j = 0; j < n; j++) {
 
                 if (arr[i][0] < arr[j][0] && arr[i][1] < arr[j][1]) {
-                    score[j]++;
+                    score[i]++;
                 }
 
             }
