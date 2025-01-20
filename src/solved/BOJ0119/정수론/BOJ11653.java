@@ -10,17 +10,18 @@ public class BOJ11653 {
         int target = sc.nextInt();
 
         StringBuilder sb = new StringBuilder();
-        int num = 2;
-        while (target > 1) {
 
-            if (target % num == 0) {
-                target /= num;
-                sb.append(num).append("\n");
-            } else {
-                num++;
+        for (int i = 2; i <= Math.sqrt(target); i++) {
+
+            while (target % i == 0) {
+                target /= i;
+                sb.append(i).append("\n");
             }
         }
 
+        if (target > 1) {
+            sb.append(target).append("\n");
+        }
         sc.close();
         System.out.println(sb.toString());
 
